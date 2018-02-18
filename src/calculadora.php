@@ -20,6 +20,9 @@ if(count($_POST) && isset($_POST['op'])){
             $valor = "Divisão inválida!";
         }
     }
+    elseif($_POST['op'] == 'reset'){
+        $valor = 0;
+    }
 }
 
 ?>

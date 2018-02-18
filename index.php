@@ -1,4 +1,4 @@
-<?php require_once("calculadora.php"); ?>
+<?php require_once("src/calculadora.php"); ?>
 
 <!DOCTYPE html>
   <html>
@@ -7,6 +7,7 @@
         <title>Calculadora - PHP/MaterializeCSS</title>
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <link rel="stylesheet" href="node_modules/materialize-css/dist/css/materialize.min.css">
+        <link rel="stylesheet" href="src/css/style.css">
     </head>
     <body>
         <div class="container">
@@ -19,11 +20,11 @@
                                 <div class="row">
                                     <form method="post">
                                         <div class="input-field col s6">
-                                            <input type="number" id="num1" name="n1" />
+                                            <input type="number" id="num1" name="n1" required />
                                             <label for="num1">Operando 1</label>
                                         </div>
                                         <div class="input-field col s6">
-                                            <input type="number" id="num2" name="n2" />
+                                            <input type="number" id="num2" name="n2" required />
                                             <label for="num2">Operando 2</label>
                                         </div>
                                         <div class="input-field col s12">
@@ -47,7 +48,14 @@
                                 </div>
                             </div>
                             <div class="card-action">
-                                <a href="#">Resultado: <?php echo $valor; ?></a>
+                                <div class="col s12">
+                                    <a href="#" class="col s9">Resultado: <?php echo $valor; ?></a>
+                                    <form method="post">
+                                        <button type="submit" name="op" value="reset"
+                                                class="btn col s2 grey darken-3"
+                                        ><b>Resetar</b></button>
+                                    </form>
+                                </div>
                             </div>
                         </div>
                     </div>
