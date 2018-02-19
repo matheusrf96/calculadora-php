@@ -1,7 +1,7 @@
 <?php require_once("src/calculadora.php"); ?>
 
 <!DOCTYPE html>
-  <html>
+<html>
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <title>Calculadora - PHP/MaterializeCSS</title>
@@ -66,7 +66,7 @@
         <script src="node_modules/jquery/dist/jquery.min.js"></script>
         <script src="node_modules/materialize-css/dist/js/materialize.min.js"></script>
     </body>
-  </html>
+</html>
 
  
         
